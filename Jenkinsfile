@@ -1,7 +1,3 @@
-groovy
-
-CopyEdit
-
 pipeline {
 
 agent any
@@ -12,7 +8,7 @@ stage('Clone Repository') {
 
 steps {
 
-git 'https://github.com/Jithendra-Jithu/resume'
+git url:'https://github.com/Jithendra-Jithu/resume',branch:'main'
 
 }
 
